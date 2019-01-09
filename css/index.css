@@ -1,0 +1,517 @@
+@charset "UTF-8";
+.yx-box {
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #333;
+  font-size: 0.18666667rem;
+  overflow: hidden;
+}
+.yx-head {
+  width: 100%;
+  background-color: #fff;
+}
+.yx-head .wrap-header {
+  height: 0.97333333rem;
+}
+.yx-head header {
+  position: fixed;
+  background-color: #fff;
+  z-index: 100;
+}
+.yx-head header > div {
+  padding: 0.10666667rem 0.2rem 0;
+}
+.yx-head header > div h3 {
+  display: inline-block;
+  width: 0.92rem;
+  height: 0.26666667rem;
+  margin-right: 0.08rem;
+}
+.yx-head header div > h3 img {
+  width: 100%;
+  height: 100%;
+}
+.yx-head header > div a {
+  display: inline-block;
+  width: 3.53333333rem;
+  height: 0.37333333rem;
+  background-color: #EDEDED;
+  border-radius: 0.06666667rem;
+  color: #666;
+  text-align: center;
+  line-height: 0.37333333rem;
+}
+.yx-head header > div > a > i {
+  display: inline-block;
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  margin-right: 0.06666667rem;
+  background: url("../imgs/fangdajing.png") no-repeat top / cover;
+  vertical-align: middle;
+}
+.yx-head header > ul {
+  display: flex;
+  padding: 0.12rem 0.2rem 0;
+  flex-flow: row nowrap;
+}
+.yx-head header > ul > li + li {
+  margin-left: 0.32rem;
+}
+.yx-head header > ul > li > a {
+  display: inline-block;
+  width: 0.58666667rem;
+  text-align: center;
+  line-height: 0.36rem;
+}
+.yx-head header > ul > li:first-child > a {
+  border-bottom: 0.01333333rem solid #B4282D;
+  color: #B4282D;
+}
+.yx-head > nav > .h-banner {
+  position: relative;
+}
+.yx-head > nav > .h-banner > ul {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+}
+.yx-head > nav > .h-banner > ul > li {
+  flex: 1;
+  height: 2.66666667rem;
+}
+.yx-head > nav > .h-banner > ul > li img {
+  height: 100%;
+}
+.yx-head > nav > .h-banner > .swiper-pagination > span {
+  width: 0.29333333rem;
+  height: 0.04rem;
+  border-radius: 0;
+  opacity: .4;
+  background-color: #fff;
+}
+.yx-head > nav > .h-banner > .swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.yx-head > nav > div:last-child {
+  width: 100%;
+  height: 0.46666667rem;
+  padding-left: 0.2rem;
+  font-size: 0.16rem;
+  line-height: 0.49333333rem;
+}
+.yx-head > nav > div:last-child i {
+  display: inline-block;
+  width: 0.21333333rem;
+  height: 0.21333333rem;
+  margin-right: 0.05333333rem;
+  background: url("../imgs/redCheck.png") no-repeat top / cover;
+  vertical-align: middle;
+}
+.yx-head > nav > div:last-child i ~ i {
+  margin-left: 0.24rem;
+}
+.yx-head > nav > div:last-child span {
+  vertical-align: middle;
+}
+.yx-body {
+  width: 100%;
+}
+.yx-body .brand {
+  width: 100%;
+  margin-top: 0.13333333rem;
+  background-color: #fff;
+}
+.yx-body .brand > h3 {
+  width: 100%;
+  padding: 0.2rem 0 0.2rem;
+  font-weight: normal;
+  text-align: center;
+}
+.yx-body .brand > h3 > span {
+  vertical-align: middle;
+}
+.yx-body .brand > h3 > i {
+  display: inline-block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin-left: 0.06666667rem;
+  background: url("../imgs/rightBtn.png") no-repeat top / cover;
+  vertical-align: middle;
+}
+.yx-body .brand > ul li {
+  display: flex;
+  padding: 0 0.10666667rem 0.06666667rem;
+  font-size: 0.17333333rem;
+}
+.yx-body .brand > ul li div {
+  position: relative;
+  flex: 1;
+  height: 1.44rem;
+  padding: 0.09333333rem 0.13333333rem 0;
+  background-color: #F4F4F4;
+}
+.yx-body .brand > ul li div ~ div {
+  margin-left: 0.06666667rem;
+}
+.yx-body .brand > ul li div > img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2.36rem;
+  height: 1.58666667rem;
+}
+.yx-body .brand > ul li div > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.yx-body .brand > ul li div p > img {
+  width: 0.42666667rem;
+  height: 15%;
+}
+.yx-body > .common-ad .title {
+  position: relative;
+  width: 100%;
+  height: 1.73333333rem;
+  margin-top: 0.13333333rem;
+  background: url("../imgs/ad-bg/ad-bg1.png") no-repeat top / cover;
+  color: #8BA0B6;
+  text-align: center;
+}
+.yx-body > .common-ad .title > p {
+  padding: 0.44rem 0 0.13333333rem 0;
+  font-size: 0.24rem;
+}
+.yx-body > .common-ad .title > a > p {
+  width: 1.6rem;
+  height: 0.38666667rem;
+  margin: 0 auto;
+  background-color: #D8E5F1;
+  line-height: 0.38666667rem;
+  font-size: 0.17333333rem;
+}
+.yx-body > .common-ad .title > a > p > i {
+  display: inline-block;
+  width: 0.06666667rem;
+  height: 0.14666667rem;
+  margin-left: 0.04rem;
+  background: url("../imgs/r-btn.png") no-repeat top / cover;
+}
+.yx-body > .common-ad > .title::after {
+  position: absolute;
+  bottom: -0.08rem;
+  left: 50%;
+  display: block;
+  width: 0.16rem;
+  height: 0.16rem;
+  margin-left: -0.08rem;
+  background-color: #fff;
+  transform: rotate(45deg);
+  content: '';
+}
+.yx-body > .common-ad > .goods {
+  display: flex;
+  width: fit-content;
+  padding: 0.2rem;
+  background-color: #fff;
+}
+.yx-body > .common-ad > .goods > div {
+  position: relative;
+}
+.yx-body > .common-ad > .goods > div > div {
+  width: 1.86666667rem;
+  height: 1.86666667rem;
+  background-color: #F4F4F4;
+}
+.yx-body > .common-ad > .goods > div > div > img {
+  width: 100%;
+  height: 100%;
+}
+.yx-body > .common-ad > .goods > div > p {
+  width: 1.62666667rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.yx-body > .common-ad > .goods > div > p:nth-of-type(2) {
+  font-size: 0.17333333rem;
+  padding-top: 0.08rem;
+}
+.yx-body > .common-ad > .goods > div > p:nth-of-type(3) {
+  font-size: 0.16rem;
+  color: #7f7f7f;
+}
+.yx-body > .common-ad > .goods > div > span {
+  color: #ca4a3d;
+  font-size: 0.17333333rem;
+}
+.yx-body > .common-ad > .goods > div > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1.86666667rem;
+  height: 2.72rem;
+}
+.yx-body > .common-ad > .goods > div + div {
+  margin-left: 0.2rem;
+}
+.yx-body > .ad2 > .title {
+  background-image: url("../imgs/ad-bg/ad-bg2.png");
+  color: #B4A078;
+}
+.yx-body > .ad2 > .title a > p {
+  background-color: #F4E9CB;
+}
+.yx-body > .ad2 > .title a > p > i {
+  background-image: url("../imgs/ad-btn2.png");
+}
+.yx-body strong.tagc {
+  display: block;
+  width: fit-content;
+  margin-left: 0.06666667rem;
+  margin-top: 0.13333333rem;
+  padding: 0 0.09333333rem;
+  border-radius: 0.04rem;
+  color: white;
+  font-size: 0.13333333rem;
+}
+.yx-body strong.tag1 {
+  background-color: #f48f18;
+}
+.yx-body strong.tag2 {
+  background-color: #E5686D;
+}
+.yx-body > .time {
+  position: relative;
+  width: 100%;
+  height: 2.53333333rem;
+  margin-top: 0.13333333rem;
+  background-color: #fff;
+}
+.yx-body > .time .left {
+  padding: 0.65333333rem 0 0 0.38666667rem;
+}
+.yx-body > .time .left p:first-child {
+  letter-spacing: 0.12rem;
+  font-size: 0.24rem;
+}
+.yx-body > .time .left p:nth-of-type(2) {
+  padding: 0.10666667rem 0 0.21333333rem 0;
+}
+.yx-body > .time .left p:nth-of-type(2) > span {
+  display: inline-block;
+  width: 0.42666667rem;
+  height: 0.37333333rem;
+  background-color: #444;
+  border-radius: 0.04rem;
+  color: #fff;
+  font-size: 0.2rem;
+  text-align: center;
+  line-height: 0.37333333rem;
+}
+.yx-body > .time .left p:last-child {
+  font-size: 0.16rem;
+}
+.yx-body > .time .right img {
+  position: absolute;
+  top: 0.2rem;
+  left: 2.66666667rem;
+  width: 2rem;
+  height: 2rem;
+}
+.yx-body > .time .right strong {
+  position: absolute;
+  top: 1.33333333rem;
+  right: 0.37333333rem;
+  display: inline-block;
+  width: 0.66666667rem;
+  height: 0.66666667rem;
+  background-color: #F59524;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.17333333rem;
+}
+.yx-body > .time .right strong > p:first-child {
+  margin-top: 0.08rem;
+}
+.yx-body > .time .right strong > p:last-child {
+  text-decoration: line-through;
+}
+.yx-body > .time > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.yx-body > .ad3 {
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.13333333rem;
+}
+.yx-body > .ad3 img {
+  width: 100%;
+  height: 100%;
+}
+.yx-body > .select {
+  width: 100%;
+  margin-top: 0.13333333rem;
+  background-color: #fff;
+}
+.yx-body > .select header {
+  width: 100%;
+  text-align: center;
+}
+.yx-body > .select header h3 {
+  display: inline-block;
+  padding: 0.2rem 0;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.yx-body > .select header i {
+  display: inline-block;
+  width: 0.21333333rem;
+  height: 0.21333333rem;
+  background: url("../imgs/rightBtn.png") no-repeat top / cover;
+  vertical-align: middle;
+}
+.yx-body > .select ul {
+  display: flex;
+  padding: 0 0.2rem;
+}
+.yx-body > .select ul li img {
+  width: 3.84rem;
+  height: 2.14666667rem;
+  border-radius: 0.06666667rem;
+}
+.yx-body > .select ul li {
+  position: relative;
+}
+.yx-body > .select ul li p:first-of-type {
+  padding-top: 0.09333333rem;
+}
+.yx-body > .select ul li p span {
+  color: #d2282d;
+}
+.yx-body > .select ul li p ~ p {
+  padding: 0.02666667rem 0 0.24rem 0;
+  color: #7F7F7F;
+  font-size: 0.16rem;
+}
+.yx-body > .select ul li ~ li {
+  margin-left: 0.13333333rem;
+}
+.yx-body > .select ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.common-goods {
+  width: 100%;
+  margin-top: 0.13333333rem;
+  background-color: #fff;
+}
+.common-goods h3 {
+  width: 100%;
+  padding: 0.25333333rem 0;
+  text-align: center;
+  font-weight: normal;
+  font-size: 0.18666667rem;
+}
+.common-goods ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+.common-goods ul li {
+  position: relative;
+  margin-left: 0.12rem;
+  padding-bottom: 0.18666667rem;
+}
+.common-goods ul li > div {
+  width: 2.32rem;
+  height: 2.78666667rem;
+  border-radius: 0.06666667rem 0.06666667rem 0 0;
+  background-color: #F4F4F4;
+}
+.common-goods ul li > div > img {
+  width: 2.2rem;
+  height: 2.2rem;
+  padding-left: 0.06666667rem;
+}
+.common-goods ul li > p:first-of-type {
+  position: absolute;
+  top: 2.32rem;
+  left: 0;
+  width: 2.32rem;
+  height: 0.46666667rem;
+  border-radius: 0 0 0.06666667rem 0.06666667rem;
+  background-color: #F1ECE2;
+  color: #9F8A60;
+  text-indent: 0.06666667rem;
+  line-height: 0.46666667rem;
+  font-size: 0.16rem;
+}
+.common-goods ul li > p:nth-of-type(2) {
+  width: 2.10666667rem;
+  padding-top: 0.06666667rem;
+  text-indent: 0.06666667rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.common-goods ul li > span {
+  padding-left: 0.05333333rem;
+  color: #d2282d;
+  font-size: 0.2rem;
+}
+.common-goods ul li > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.common-goods ul li > p:nth-of-type(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.18666667rem;
+  border: 0.01333333rem solid #D4CAB6;
+  color: #b4a078;
+  font-size: 0.16rem;
+  text-align: center;
+}
+.common-goods ul li > p:nth-of-type(3) span + span {
+  position: relative;
+  top: -0.04rem;
+}
+.common-goods ul li > img {
+  width: 0.46666667rem;
+  height: 0.18666667rem;
+  padding-top: 0.06666667rem;
+  padding-left: 0.06666667rem;
+}
+.common-goods ul li:last-child > div {
+  text-align: center;
+}
+.common-goods ul li:last-child > div > p {
+  padding: 0.8rem 0 0.33333333rem 0;
+  font-size: 0.21333333rem;
+}
+.common-goods ul li:last-child > div > i {
+  display: inline-block;
+  width: 0.46666667rem;
+  height: 0.46666667rem;
+  background: url("../imgs/next.png") no-repeat top / cover;
+}

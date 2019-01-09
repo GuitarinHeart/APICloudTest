@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易严选</title>
+    <meta name="disciption" content="移动端实战练习 rem适配">
+    <meta name="author" content="胡开麟">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script>
+        var html = document.querySelector('html');
+        changeRem();
+        //添加resize事件
+        window.addEventListener('resize',changeRem);
+        function changeRem() {
+            //获取设备宽度
+            var width = html.getBoundingClientRect().width;
+            html.style.fontSize = 2*width/10+ 'px';
+        }
+    </script>
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="css/public.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type='text/css'>
+    <link rel="stylesheet" href="css/index.css" type='text/css'>
+
+</head>
+<body>
+    <div class="yx-box">
+        <!--开始 严选头部-->
+        <div class="yx-head">
+            <div class="wrap-header">
+                <header>
+                    <div>
+                        <h3>
+                            <img src="imgs/logoText.png"/>
+                        </h3>
+                        <a href=""><i></i><span>搜索商品, 共9542款好物</span></a>
+                    </div>
+                    <ul>
+                        <li><a href="">推荐</a></li>
+                        <li><a href="">居家</a></li>
+                        <li><a href="">配件</a></li>
+                        <li><a href="">服装</a></li>
+                        <li><a href="">电器</a></li>
+                        <li><a href="">洗护</a></li>
+                    </ul>
+                </header>
+            </div>
+            <nav>
+                <div class="h-banner swiper-container" id="swiper1">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href=""><img src="imgs/head-banner/1.jpg" alt=""></a></li>
+                        <li class="swiper-slide"><a href=""><img src="imgs/head-banner/2.jpg" alt=""></a></li>
+                        <li class="swiper-slide"><a href=""><img src="imgs/head-banner/3.jpg" alt=""></a></li>
+                        <li class="swiper-slide"><a href=""><img src="imgs/head-banner/4.jpg" alt=""></a></li>
+                        <li class="swiper-slide"><a href=""><img src="imgs/head-banner/5.jpg" alt=""></a></li>
+                        <li class="swiper-slide"><a href=""><img src="imgs/head-banner/6.jpg" alt=""></a></li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div>
+                    <i></i><span>网易自营品牌</span>
+                    <i></i><span>30天无忧退货</span>
+                    <i></i><span>48小时快速退款</span>
+                </div>
+            </nav>
+        </div>
+        <!--开始 严选身体-->
+        <div class="yx-body">
+            <div class="brand">
+                <h3><span>品牌制造商直供</span><i></i></h3>
+                <ul>
+                    <li>
+                        <div>
+                            <p>Timberland制造商</p>
+                            <p>359元起</p>
+                            <img src="imgs/body-brand/1.png" alt="">
+                            <a href=""></a>
+                        </div>
+                        <div>
+                            <p>Adidas制造商</p>
+                            <p>35元起</p>
+                            <img src="imgs/body-brand/2.png" alt="">
+                            <a href=""></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>MUJI制造商</p>
+                            <p>19元起</p>
+                            <p><img src="imgs/body-brand/tag.png" alt=""></p>
+                            <img src="imgs/body-brand/3.png" alt="">
+                            <a href=""></a>
+                        </div>
+                        <div>
+                            <p>Chloe制造商</p>
+                            <p>149元起</p>
+                            <img src="imgs/body-brand/4.png" alt="">
+                            <a href=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="ad1 common-ad swiper-container" id="swiper2">
+                <div class="title">
+                    <p>周一周四·新品首发</p>
+                    <a href=""><p>查看全部<i></i></p></a>
+                </div>
+                <div class="goods swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div><img src="imgs/ad-goods/ad-goods1/1.png" /></div>
+                        <p>纯牛奶 250毫升*12得到的</p>
+                        <p>滴滴香浓，纯粹好奶</p>
+                        <span>¥88</span>
+                        <a href=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img src="imgs/ad-goods/ad-goods1/2.png" /></div>
+                        <p>纯牛奶 250毫升*12得到的</p>
+                        <p>滴滴香浓，纯粹好奶</p>
+                        <span>¥88</span>
+                        <a href=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img src="imgs/ad-goods/ad-goods1/3.png" /></div>
+                        <p>纯牛奶 250毫升*12得到的</p>
+                        <p>滴滴香浓，纯粹好奶</p>
+                        <span>¥88</span>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ad2 common-ad">
+                <div class="title">
+                    <p>人气推荐·好物精选</p>
+                    <a href=""><p>查看全部<i></i></p></a>
+                </div>
+                <div class="goods">
+                    <div>
+                        <div><img src="imgs/ad-goods/ad-goods2/1.jpg" /></div>
+                        <strong class="tagc tag1">限时购</strong>
+                        <p>纯牛奶 250毫升*12得到的</p>
+                        <p>滴滴香浓，纯粹好奶</p>
+                        <span>¥88</span>
+                        <a href=""></a>
+                    </div>
+                    <div>
+                        <div><img src="imgs/ad-goods/ad-goods2/2.png" /></div>
+                        <strong class="tagc tag1">限时购</strong>
+                        <p>纯牛奶 250毫升*12得到的</p>
+                        <p>滴滴香浓，纯粹好奶</p>
+                        <span>¥88</span>
+                        <a href=""></a>
+                    </div>
+                    <div>
+                        <div><img src="imgs/ad-goods/ad-goods2/3.png" /></div>
+                        <strong class="tagc tag2">爆品</strong>
+                        <p>纯牛奶 250毫升*12得到的</p>
+                        <p>滴滴香浓，纯粹好奶</p>
+                        <span>¥88</span>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="time clearfix">
+                <div class="left fl">
+                    <p>严选限时购</p>
+                    <p><span>02</span>：<span>23</span>：<span>26</span></p>
+                    <p>下一场 18:00 开始</p>
+                </div>
+                <div class="right fr">
+                    <img src="imgs/body-time/1.png"/>
+                    <strong><p>¥179</p><p>¥229</p></strong>
+                </div>
+                <a href=""></a>
+            </div>
+            <div class="ad3">
+                <a href=""><img src="imgs/ad-bg/ad-bg3.jpg"/></a>
+            </div>
+            <div class="select">
+                <header>
+                    <h3>专题精选</h3>
+                    <i></i>
+                </header>
+                <ul>
+                    <li>
+                        <img src="imgs/body-select/1.jpg"/>
+                        <p class="clearfix">忙碌的日子, 来一碗鸡汤暖暖胃<span class="fr">32元起</span></p>
+                        <p>白果炖鸡汤好喝的秘诀</p>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <img src="imgs/body-select/2.jpg"/>
+                        <p class="clearfix">忙碌的日子, 来一碗鸡汤暖暖胃<span class="fr">32元起</span></p>
+                        <p>白果炖鸡汤好喝的秘诀</p>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="family-goods common-goods">
+                <h3>居家好物</h3>
+                <ul>
+                    <li>
+                        <div><img src="imgs/body-family/1.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-family/2.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-family/3.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <img src="imgs/baopin.png">
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-family/4.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-family/5.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-family/6.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-family/7.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <!--<p><span>3</span><span>色</span><span>可</span><span>选</span></p>-->
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p>更多居家好物</p>
+                            <i></i>
+                        </div>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fitting-goods common-goods">
+                <h3>配件好物</h3>
+                <ul>
+                    <li>
+                        <div><img src="imgs/body-fitting/1.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-fitting/2.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥99</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-fitting/3.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <img src="imgs/baopin.png">
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-fitting/4.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-fitting/5.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-fitting/6.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-fitting/1.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥1399</span>
+                        <!--<p><span>3</span><span>色</span><span>可</span><span>选</span></p>-->
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p>更多配件好物</p>
+                            <i></i>
+                        </div>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clothes-goods common-goods">
+                <h3>服装好物</h3>
+                <ul>
+                    <li>
+                        <div><img src="imgs/body-clothes/1.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-clothes/2.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥99</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-clothes/3.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <img src="imgs/baopin.png">
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-clothes/4.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-clothes/5.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-clothes/6.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-clothes/7.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥1399</span>
+                        <!--<p><span>3</span><span>色</span><span>可</span><span>选</span></p>-->
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p>更多服装好物</p>
+                            <i></i>
+                        </div>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="device-goods common-goods">
+                <h3>电器好物</h3>
+                <ul>
+                    <li>
+                        <div><img src="imgs/body-device/1.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-device/2.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥99</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-device/3.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <img src="imgs/baopin.png">
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-device/4.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-device/5.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-device/6.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-device/7.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥1399</span>
+                        <!--<p><span>3</span><span>色</span><span>可</span><span>选</span></p>-->
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p>更多电器好物</p>
+                            <i></i>
+                        </div>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wash-goods common-goods">
+                <h3>洗护好物</h3>
+                <ul>
+                    <li>
+                        <div><img src="imgs/body-wash/1.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-wash/2.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥99</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-wash/3.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <img src="imgs/baopin.png">
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-wash/4.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-wash/5.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-wash/6.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-wash/7.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥1399</span>
+                        <!--<p><span>3</span><span>色</span><span>可</span><span>选</span></p>-->
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p>更多电器好物</p>
+                            <i></i>
+                        </div>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="food-goods common-goods">
+                <h3>饮食好物</h3>
+                <ul>
+                    <li>
+                        <div><img src="imgs/body-food/1.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-food/2.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥99</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-food/3.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <img src="imgs/baopin.png">
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-food/4.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-food/5.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-food/6.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-food/7.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥1399</span>
+                        <!--<p><span>3</span><span>色</span><span>可</span><span>选</span></p>-->
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p>更多饮食好物</p>
+                            <i></i>
+                        </div>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="feature-goods common-goods">
+                <h3>特色区好物</h3>
+                <ul>
+                    <li>
+                        <div><img src="imgs/body-feature/1.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-feature/2.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥99</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-feature/3.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <img src="imgs/baopin.png">
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-feature/4.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-feature/5.png" alt=""></div>
+                        <p>MUJI制造商，舒棉绒内里</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-feature/6.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>升级款双宫萤桑蚕丝被一辈子</p>
+                        <span>¥1399</span>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div><img src="imgs/body-feature/7.png" alt=""></div>
+                        <p>双层子母被，四季皆可用</p>
+                        <p>北欧长绒毛男/女居家鞋</p>
+                        <span>¥1399</span>
+                        <!--<p><span>3</span><span>色</span><span>可</span><span>选</span></p>-->
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div>
+                            <p>更多特色区好物</p>
+                            <i></i>
+                        </div>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--开始 严选尾部-->
+        <div class="yx-foot">
+            <div class="foot">
+                <a href=""><span>下载APP</span></a>
+                <a href=""><span>电脑版</span></a>
+                <p>网易公司版权所有@1997-2018</p>
+                <p>食品经营许可证：JY13301080111719</p>
+            </div>
+            <div class="gift">
+                <a href=""><img src="imgs/foot/gift.png" /></a>
+            </div>
+            <div class="btn">
+                <a href=""><img src="imgs/foot/btn.png"/></a>
+            </div>
+            <div class="f-nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i></i>
+                            <p>首页</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i></i>
+                            <p>识物</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i></i>
+                            <p>分类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i></i>
+                            <p>购物车</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i></i>
+                            <p>个人</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper1 = new Swiper('#swiper1', {
+            autoplay: true,//可选选项，自动滑动
+            effect : 'fade',
+            loop : true,
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        });
+        var swiper2 = new Swiper('#swiper2', {
+            slidesPerView : 2.6,
+        });
+
+    </script>
+</body>
+</html>

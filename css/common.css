@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.yx-foot {
+  position: relative;
+  width: 100%;
+}
+.foot {
+  height: 122px;
+  margin-top: 10px;
+  background-color: #414141;
+  text-align: center;
+}
+.foot a {
+  display: inline-block;
+  padding: 27px 0 12px 0;
+}
+.foot a:first-of-type {
+  padding-right: 10px;
+}
+.foot a:last-of-type {
+  padding-left: 10px;
+}
+.foot span {
+  display: inline-block;
+  width: 84px;
+  height: 31px;
+  border: 1px solid #6D6D6D;
+  color: #f5f5f5;
+  font-size: 12px;
+  text-align: center;
+  line-height: 31px;
+}
+.foot p {
+  width: 100%;
+  color: #999;
+  font-size: 12px;
+}
+.yx-foot > .gift {
+  position: fixed;
+  right: 0;
+  top: 507px;
+  z-index: 500;
+}
+.yx-foot > .gift img {
+  width: 56px;
+  height: 40px;
+}
+.yx-foot > .btn {
+  position: fixed;
+  right: 10px;
+  top: 565px;
+  z-index: 500;
+}
+.yx-foot > .btn img {
+  width: 41px;
+  height: 41px;
+}
+.yx-foot > .f-nav {
+  width: 100%;
+  height: 49px;
+}
+.yx-foot > .f-nav ul {
+  display: flex;
+}
+.yx-foot > .f-nav ul li {
+  flex: 1;
+  text-align: center;
+}
+.yx-foot > .f-nav ul li i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 7px;
+  background: url("../imgs/foot/ui2.png") no-repeat 0 -100px;
+  background-size: 100%;
+}
+.yx-foot > .f-nav ul li:nth-of-type(2) i {
+  background-position: 0 -175px;
+}
+.yx-foot > .f-nav ul li:nth-of-type(3) i {
+  background-position: 0 -75px;
+}
+.yx-foot > .f-nav ul li:nth-of-type(4) i {
+  background-position: 0 -25px;
+}
+.yx-foot > .f-nav ul li:nth-of-type(5) i {
+  background-position: 0 -225px;
+}
+.yx-foot > .f-nav ul li:first-child p {
+  color: #B4282D;
+}
+.yx-foot > .f-nav ul li p {
+  margin-top: -7px;
+  font-size: 12px;
+  color: #7f7f7f;
+}
